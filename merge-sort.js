@@ -27,5 +27,5 @@ function mergeSort(input) {
   return array;
 }
 
-const output = mergeSort(example, 'Top Down');
+const output = mergeSort(example);
 console.log(output);
