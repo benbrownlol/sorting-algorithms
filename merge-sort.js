@@ -1,6 +1,6 @@
 const example = [9, 2, 5, 6, 4, 3, 7, 10, 1, 8];
 
-function mergeSort(input, method) {
+function mergeSort(input) {
   const array = [...input];
 
   if (array.length < 2) return array;
@@ -9,7 +9,7 @@ function mergeSort(input, method) {
   const left = array.slice(0, middle);
   const right = array.slice(middle);
 
-  return sort(mergeSort(left, 'Top Down'), mergeSort(right, 'Top Down'));
+  return sort(mergeSort(left), mergeSort(right));
 
   function sort(left, right) {
     const sorted = [];
