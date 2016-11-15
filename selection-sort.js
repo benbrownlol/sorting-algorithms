@@ -6,7 +6,7 @@ function selectionSort(input) {
   for (let i = 0; i < array.length; i++) {
     let min = i; // store current index
     for (let j = i + 1; j < array.length; j++) { // loop over all array elements after current index
-      if (array[j] < array[min]) min = j;
+      if (array[j] < array[min]) min = j; // find and store minimum value's index
     }
     if (i !== min) [array[i], array[min]] = [array[min], array[i]]; // swap values if min value changed
   }
