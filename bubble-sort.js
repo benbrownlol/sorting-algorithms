@@ -7,7 +7,7 @@ function bubbleSort(input) {
   while (swapping) { // use `while` loop to repeatedly loop through input array
     swapping = false; // stop `while` loop from running again if conditional not met
     for (let i = 0; i < array.length; i++) {
-      if (array[i] && array[i + 1] && array[i] > array[i + 1]) {
+      if (array[i] && array[i + 1] && array[i] > array[i + 1]) { // if current index value is more than next index value
         [array[i], array[i + 1]] = [array[i + 1], array[i]]; // swap array values
         swapping = true; // conditional met, keep `while` loop running
       }
