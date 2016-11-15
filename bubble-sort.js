@@ -4,12 +4,12 @@ function bubbleSort(input) {
   const array = [...input]; // clone input array for Pure Function
 
   let swapping = true; // init swapping variable to start `while` loop
-  while (swapping) {
-    swapping = false; // stop `while` loop if conditional not met
+  while (swapping) { // use `while` loop to repeatedly loop through input array
+    swapping = false; // stop `while` loop from running again if conditional not met
     for (let i = 0; i < array.length; i++) {
       if (array[i] && array[i + 1] && array[i] > array[i + 1]) {
         [array[i], array[i + 1]] = [array[i + 1], array[i]]; // swap array values
-        swapping = true; // keep `while` loop running
+        swapping = true; // conditional met, keep `while` loop running
       }
     }
   }
